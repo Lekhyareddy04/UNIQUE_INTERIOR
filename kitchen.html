@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hall</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <style> 
+    @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Permanent+Marker&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+    .ma{
+      margin-left: 80px;
+      font-family: caveat;
+      color: black;
+      font-size: 30px;
+    }
+    .ji{
+        height: 350px;
+        margin: 20px;
+        border: 2px solid black;
+        padding:10px;
+    }
+    .bord{
+        padding: 10px;
+    }
+    .a{
+        font-size: 40px;
+        font-family: caveat;
+        margin-top: 50px;
+        margin-left: 20px;
+    }
+    .b{
+        font-size: 20px;
+        font-family:Arsenal SC;
+        padding: 20px;
+        
+    }
+    .no{
+        height: 300px;
+    }
+    * { box-sizing: border-box; }
+
+    body { font-family: sans-serif; }
+
+    .carousel {
+    background: #ffffff;
+    }
+
+    .carousel-cell {
+    width: 29%;
+    height: 450px;
+    margin-right: 10px;
+    background: #8C8;
+    border-radius: 20px;
+    counter-increment: carousel-cell;
+    border: 2px solid black;
+    }
+
+    .carousel-cell.is-selected {
+    background: #ED2;
+    }
+
+    /* cell number */
+    .carousel-cell:before {
+    display: block;
+    content: counter(carousel-cell);
+    line-height: 200px;
+    color: white;
+    }
+    .social{
+      height: 40px;
+      margin: 20px;
+      margin-left: 60px;
+    }
+
+    </style>
+</head>
+<body>
+    <nav style="position: static;"class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img src="image/0logo.jpg" alt="" style="height: 50px; width: 60px; margin-left: 30px;"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item ma">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item ma">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item ma">
+                <a class="nav-link" href="contacts.html">Contact</a>
+              </li>
+              <li class="nav-item dropdown ma">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Services
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="hall.html">Hall</a></li>
+                  <li><a class="dropdown-item" href="kitchen.html">Kitchen</a></li>
+                  <li><a class="dropdown-item" href="bedroom.html">BedRoom</a></li>
+                  <li><a class="dropdown-item" href="bathroom.html">BathRoom</a></li>
+                  <li><a class="dropdown-item" href="pooja.html">pooja mandhir</a></li>
+                  <li><a class="dropdown-item" href="bar.html">Bar</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <div class="carousel" data-flickity='{ "groupCells": true }' style="margin: 30px;">
+        <div class="carousel-cell" style="background-image: url(kit/k1.webp); background-size: cover;"></div>
+        <div class="carousel-cell" style="background-image: url(kit/k2.webp); background-size: cover;"></div>
+        <div class="carousel-cell" style="background-image: url(kit/k3.jpeg); background-size: cover;"></div>
+        <div class="carousel-cell" style="background-image: url(kit/k4.webp); background-size: cover;"></div>
+        <div class="carousel-cell" style="background-image: url(kit/k5.jpg); background-size: cover;"></div>
+        <div class="carousel-cell" style="background-image: url(kit/k6.jpg); background-size: cover;"></div>
+        <div class="carousel-cell" style="background-image: url(kit/k7.jpg); background-size: cover;"></div>
+        <div class="carousel-cell" style="background-image: url(kit/k8.webp); background-size: cover;"></div>
+        <div class="carousel-cell" style="background-image: url(kit/k9.jpg); background-size: cover;"></div>
+        <div class="carousel-cell" style="background-image: url(kit/k0.webp); background-size: cover;"></div>
+    </div>
+    <div class="d-flex flex-row">
+        <img src="kit/k12.webp" alt="" class="ji shadow-lg p-3 mb-5 bg-body-tertiary rounded" data-aos="zoom-in">
+        <div class="bord">
+            <h1 class="a">TRADITIONAL KITCHEN </h1>
+            <p class="b">There has always been grace and elegance in traditional kitchens! The traditional kitchen layout has been around for quite some time,
+                 but as homeowners search for ways to get more from their cooking spaces, classic simplicity with a 
+                dash of modern flair has emerged as the new design mantra.</p>
+        </div>
+    </div>
+    <div class="d-flex flex-row">
+        <div class="bord">
+            <h1 class="a">A-U shaped modren kitchen</h1>
+            <p class="b">A U-shaped kitchen, also known as a horseshoe kitchen, is a common kitchen layout that's efficient and versatile. It features built-in cabinets,
+                 countertops, and appliances on three walls, with the fourth side left open or featuring an entry door. The U-shape can free up floor space and make it easier to access different areas of the kitchen without walking across the room.</p>
+        </div>
+        <img src="kit/k90.webp" alt="" class="ji shadow-lg p-3 mb-5 bg-body-tertiary rounded" data-aos="zoom-in">
+    </div>
+    <div class="d-flex flex-row">
+        <img src="kit/K89.webp" alt="" class="ji shadow-lg p-3 mb-5 bg-body-tertiary rounded" data-aos="zoom-in">
+        <div class="bord">
+            <h1 class="a">TRADITIONAL KITCHEN </h1>
+            <p class="b">the old-fashioned way of preparing food, the traditional Indian kitchen design made large quantities of food for each meal to feed the entire family.
+                 A comfortable and timeless appearance is a must. However, when we use the word “traditional,” we don’t mean a throwback to a bygone era. An offbeat mix of styles and s
+                 oft and soothed colour palettes are used to create a design that can be enjoyed by adults and children alike.
+                 The type of equipment and the amount of storage are the two most essential factors in determining efficiency. </p>
+        </div>
+    </div>
+    <div class="card mb-3">
+        <div class="d-flex flex-row">
+            <img src="kit/K95.webp" class="card-img-top" alt="..." style="height: 500px; width: 800px; margin: 20px;">
+            <img src="kit/K111.webp" alt="" style="height: 500px; width: 700px; margin: 20px;">
+        </div>
+        <div class="card-body">
+            <h5 class="card-title" style="font-family: caveat; font-size: 30px;">FORMAL KITCHEN </h5>
+        <p class="card-text" style="font-family: caveat; font-size: 20px;">A rustic and country-inspired kitchen theme can be used to decorate every inch of the space, from the floor to the walls and even the small appliances.
+             Building your home's interior design style can be as simple as using natural elements like stone, timber, tiles, and rattan furniture. Tables, seating, rustic lamps, and dinnerware are all examples of rustic 
+            and country-side kitchenware. Almost any piece of furniture can go with this style of interior design. 
+
+            Various raw wood cabinets and worktop options are available to you. There are many beautiful rustic tables in multiple sizes and shapes. If you’re looking for a country or rural feel in your home, 
+            a rustic interior is ideal. Thanks to its warmth and charm, you and your family will feel at ease and at home in a rural or country-themed home.</p>
+        <p class="card-text" style="font-family: caveat; font-size: 20px;"><small class="text-body-secondary">formal living area</small></p>
+        </div>
+    </div>
+    <footer style="background-color: rgba(0, 0, 0, 0.473);">
+        <div class="d-flex flex-row">
+          <img src="image/0logo.jpg" alt="" style="height: 80px; width: 80px; margin-left: 200px; margin-top: 100px;">
+          <p style="height: 80px; width: 200px; margin-left: 20px; margin-top: 120px; font-family: caveat;">UNIQUE INTERIOR</p>
+        </div>
+        <p style="height: 90px; width: 500px; margin-left: 290px; font-family: caveat;">A unique interior design seamlessly blends contemporary and traditional elements, 
+          featuring open spaces filled with natural light.</p>
+          <div class="so flex-wrap:wrap;" style="background-color: black;">
+            <a href="https://www.instagram.com/accounts/login/?hl=en" target="_blank"><img src="image/insta.avif" alt="" class="social"></a>
+            <a href="https://www.linkedin.com/in/lekhya-reddy-81825a278?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><img src="image/linkedin-logo-linkedin-symbol-linkedin-icon-free-free-vector.jpg" alt="" class="social"></a>
+            <a href="https://discord.com/login" target="_blank"><img src="image/discord-logo-icon-editorial-free-vector.jpg" alt="" class="social"></a>
+            <a href="https://www.facebook.com/login/" target="_blank"><img src="image/new-facebook-logo-2019.jpg" alt="" class="social"></a>
+          </div>
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> 
+    AOS.init();
+    </script>
+</body>
+</html>

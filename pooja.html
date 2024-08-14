@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hall</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <style> 
+    @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Permanent+Marker&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+    .ma{
+      margin-left: 80px;
+      font-family: caveat;
+      color: black;
+      font-size: 30px;
+    }
+    .ji{
+        height: 350px;
+        margin: 20px;
+        border: 2px solid black;
+        padding:10px;
+    }
+    .bord{
+        padding: 10px;
+    }
+    .a{
+        font-size: 40px;
+        font-family: caveat;
+        margin-top: 50px;
+        margin-left: 20px;
+    }
+    .b{
+        font-size: 20px;
+        font-family:Arsenal SC;
+        padding: 20px;
+        
+    }
+    .no{
+        height: 300px;
+    }
+    * { box-sizing: border-box; }
+
+    body { font-family: sans-serif; }
+
+    .carousel {
+    background: #ffffff;
+    }
+
+    .carousel-cell {
+    width: 29%;
+    height: 450px;
+    margin-right: 10px;
+    background: #8C8;
+    border-radius: 20px;
+    counter-increment: carousel-cell;
+    border: 2px solid black;
+    }
+
+    .carousel-cell.is-selected {
+    background: #ED2;
+    }
+
+    /* cell number */
+    .carousel-cell:before {
+    display: block;
+    content: counter(carousel-cell);
+    line-height: 200px;
+    color: white;
+    }
+    .social{
+      height: 40px;
+      margin: 20px;
+      margin-left: 60px;
+    }
+
+    </style>
+</head>
+<body>
+    <nav style="position: static;"class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img src="image/0logo.jpg" alt="" style="height: 50px; width: 60px; margin-left: 30px;"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item ma">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item ma">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item ma">
+                <a class="nav-link" href="contacts.htmls">Contact</a>
+              </li>
+              <li class="nav-item dropdown ma">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Services
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="hall.html">Hall</a></li>
+                  <li><a class="dropdown-item" href="kitchen.html">Kitchen</a></li>
+                  <li><a class="dropdown-item" href="bedroom.html">BedRoom</a></li>
+                  <li><a class="dropdown-item" href="bathroom.html">BathRoom</a></li>
+                  <li><a class="dropdown-item" href="pooja.html">pooja mandhir</a></li>
+                  <li><a class="dropdown-item" href="bar.html">Bar</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <div class="carousel" data-flickity='{ "groupCells": true }' style="margin: 30px;">
+        <div class="carousel-cell" style="background-image: url(poja/1.jpg); background-size: cover;"></div>
+        <div class="carousel-cell" style="background-image: url(poja/2.webp); background-size: cover;"></div>
+        <div class="carousel-cell" style="background-image: url(poja/3.webp); background-size: cover;"></div>
+        <div class="carousel-cell" style="background-image: url(poja/4.webp); background-size: cover;"></div>
+        <div class="carousel-cell" style="background-image: url(poja/5.avif); background-size: cover;"></div>
+        <div class="carousel-cell" style="background-image: url(poja/6.avif); background-size: cover;"></div>
+        <div class="carousel-cell" style="background-image: url(poja/7.jpg); background-size: cover;"></div>
+        <div class="carousel-cell" style="background-image: url(poja/8.jpg); background-size: cover;"></div>
+        <div class="carousel-cell" style="background-image: url(poja/9.jpg); background-size: cover;"></div>
+        <div class="carousel-cell" style="background-image: url(poja/91.jfif); background-size: cover;"></div>
+    </div>
+    <div class="d-flex flex-row">
+        <img src="poja/p3.jpg" alt="" class="ji shadow-lg p-3 mb-5 bg-body-tertiary rounded" data-aos="zoom-in">
+        <div class="bord">
+            <h1 class="a">Hall interior designs with pendant lights</h1>
+            <p class="b">Pendant lights make the space appear larger and more opulent. These lights also give the impression that the ceiling is higher.
+                 To create an elegant and modern environment, the area all around light can be further decorated with modern wall decor and fancy pots.</p>
+        </div>
+    </div>
+    <div class="d-flex flex-row">
+        <div class="bord">
+            <h1 class="a">Hall interior designs with artwork</h1>
+            <p class="b">Adding drawings to hall interior designs is the simplest way to add colour and charm that is most reflective of your style. 
+                The key to choosing suitable artwork is that it should be appropriate for the hall. For example, choose a traditional and cultural painting if your hall has traditional decor, such as a 
+                wooden swing and earthen pots. If the hall is modern and minimalistic, contemporary and abstract art can be chosen.</p>
+        </div>
+        <img src="poja/p4.avif" alt="" class="ji shadow-lg p-3 mb-5 bg-body-tertiary rounded" data-aos="zoom-in">
+    </div>
+    <div class="card mb-3">
+        <div class="d-flex flex-row">
+            <img src="poja/p1.jpg" class="card-img-top" alt="..." style="height: 500px; width: 800px; margin: 20px;">
+            <img src="poja/p2.jpg" alt="" style="height: 500px; width: 700px; margin: 20px;">
+        </div>
+        <div class="card-body">
+            <h5 class="card-title" style="font-family: caveat; font-size: 30px;">FORMAL LIVING AREA</h5>
+        <p class="card-text" style="font-family: caveat; font-size: 20px;">A formal living room is reserved for special occasions such as Thanksgiving and Christmas. This is a type of supplementary living area seen in bigger homes.
+            Formal living rooms, family rooms, great rooms, drawing rooms, man caves, sunrooms, home libraries, home bars, and gaming rooms are among the many rooms in our
+                huge interior design ideas for the living rooms department that are “living spaces” in nature.</p>
+        <p class="card-text" style="font-family: caveat; font-size: 20px;"><small class="text-body-secondary">formal living area</small></p>
+        </div>
+    </div>
+    <footer style="background-color: rgba(0, 0, 0, 0.473);">
+        <div class="d-flex flex-row">
+          <img src="image/0logo.jpg" alt="" style="height: 80px; width: 80px; margin-left: 200px; margin-top: 100px;">
+          <p style="height: 80px; width: 200px; margin-left: 20px; margin-top: 120px; font-family: caveat;">UNIQUE INTERIOR</p>
+        </div>
+        <p style="height: 90px; width: 500px; margin-left: 290px; font-family: caveat;">A unique interior design seamlessly blends contemporary and traditional elements, 
+          featuring open spaces filled with natural light.</p>
+          <div class="so flex-wrap:wrap;" style="background-color: black;">
+            <a href="https://www.instagram.com/accounts/login/?hl=en" target="_blank"><img src="image/insta.avif" alt="" class="social"></a>
+            <a href="https://www.linkedin.com/in/lekhya-reddy-81825a278?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><img src="image/linkedin-logo-linkedin-symbol-linkedin-icon-free-free-vector.jpg" alt="" class="social"></a>
+            <a href="https://discord.com/login" target="_blank"><img src="image/discord-logo-icon-editorial-free-vector.jpg" alt="" class="social"></a>
+            <a href="https://www.facebook.com/login/" target="_blank"><img src="image/new-facebook-logo-2019.jpg" alt="" class="social"></a>
+          </div>
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> 
+    AOS.init();
+    </script>
+</body>
+</html>

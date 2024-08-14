@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,th,tr{
+            border-collapse: collapse;
+            padding: 30px;
+        }
+        .f{
+            margin-left: 500px;
+        }
+        .lo{
+            padding: 10px;
+            border: 3px solid black;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <form class="f">
+        <table>
+            <tr>
+                <th>NAME : </th>
+                <td><input type="text" pattern="[A-Za-z]+"  maxlength="20" minlength="5"  required class="lo"></td>
+            </tr>
+            <tr>
+                <th>USERNAME : </th>
+                <td><input type="text"pattern="[a-z]+" title="Username should only contain letters." required class="lo"></td>
+            </tr> 
+            <tr>
+                <th>PASSWORD  : </th>
+                <td> <input type="password" class="lo" required></td>
+            </tr>
+            <tr>
+                <th>DOB :</th>
+                 <td><input type="date" id="date-picker" class="lo" required></td>
+            </tr>
+            <tr>
+                <th>SKILLS : </th>
+                <td><input type="checkbox">JAVA<input type="checkbox">PYTHON<input type="checkbox">CSS<input type="checkbox">HTML<input type="checkbox">NODE.JS<input type="checkbox">C</td>
+            </tr>
+            <tr>
+                <th>MOBILE NUMBER : </th>
+                <td><input type="text" minlength="10" maxlength="10" class="lo" required ></td>
+            </tr>
+            <tr>
+                <th>EMAIL ID : </th>
+                <td><input type="email" class="lo" required></td>
+            </tr>
+            <tr>
+                <th>GENDER : </th>
+                <td><input type="radio" name="male">male <input type="radio" name="male">female</td>
+            </tr>
+            <tr>
+                <th>COUNTRY : </th>
+                <td><select class="lo" required>
+                    <option>USA</option>
+                    <option>PAKISTHAN</option>
+                    <option>JAPAN</option>
+                    <option>INDIA</option>
+                    <option>AUSTRALIA</option>
+                  </select></td>
+            </tr>
+            <tr>
+                <th>STATE : </th>
+                <td><select class="lo" required>
+                    <option>KERALA</option>
+                    <option>KARNATAKA</option>
+                    <option>ANDHRA PRADESH</option>
+                    <option>TELANGANA</option>
+                    <option>TAMIL NADU</option>
+                  </select></td>
+            </tr>
+            <tr>
+                <th>TALUK : </th>
+                <td><select class="lo" required>
+                    <option>KURNOOL</option>
+                    <option>KADAPA</option>
+                    <option>KUPPAM</option>
+                    <option>MADANAPALLI</option>
+                    <option>PITAPURAM</option>
+                  </select></td>
+            </tr>
+            <tr>
+                <th>ADDRESS : </th>
+                <td><textarea rows="4" cols="50" class="lo" required></textarea></td>
+            </tr>
+            <tr>
+                <th>PINCODE : </th>
+                <td><input type="text" maxlength="6" class="lo" required></td>
+            </tr>
+            <tr>
+                <th></th>
+                <td><input type="submit" class="lo" required></td>
+            </tr>
+        </table>
+    </form>
+    <script>
+        const today = new Date();
+        const formattedDate = today.toISOString().split('T')[0];
+        document.getElementById('date-picker').setAttribute('max', formattedDate);
+    </script>
+</body>
+</html>
